@@ -13,3 +13,22 @@ Priority: optional
 Homepage: https://github.com/pbolt-dev/go-pbolt-cli
 Description: A CLI tool to interact with Passbolt.
 
+Package: haspr
+Version: 0.6.0
+Architecture: amd64
+Maintainer: Haspr Contributors <contact@haspr.dev>
+Installed-Size: 106577
+Recommends: bash_completion
+Conflicts: go-pbolt-cli, go-passbolt-cli
+Replaces: go-pbolt-cli, go-passbolt-cli
+Provides: go-haspr-cli, go-pbolt-cli, go-passbolt-cli
+Filename: pool/main/h/haspr/haspr_0.6.0_linux_amd64.deb
+Size: 30334864
+MD5sum: e17394cc7faaefdbb284e594362e91d6
+SHA1: ab460d48fa3800da7e593b0f9ed5dc03a8142622
+SHA256: 2f26d8198d1186fa5c3bb7e58ab14e6f4966a74b38839a28a531d5e37f585d06
+Section: utils
+Priority: optional
+Homepage: https://github.com/haspr-dev/go-haspr-cli
+Description: A CLI tool to interact with Passbolt.
+

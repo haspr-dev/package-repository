@@ -5,26 +5,26 @@ Codename: bookworm
 Architectures: amd64 arm64 all
 Components: main
 Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
-Date: Wed, 11 Nov 2026 13:44:41 +0000
+Date: Wed, 11 Nov 2026 14:04:17 +0000
 MD5Sum:
- 1c9c9ad6273c800e53b14fe06be9a274      531 main/binary-arm64/Packages
- e16d4574e27e432f4dc865242fe37841      392 main/binary-arm64/Packages.gz
+ 086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
+ 0e61cbaea9c337ba846103937eb4a168      583 main/binary-arm64/Packages.gz
  e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
  d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
- f6a3cffc085a161abb7b11d37cdca8c6       29 main/binary-all/Packages.gz
+ f8b3a6f5f6bf40a4f2bd4e7e1b2d2f84       29 main/binary-all/Packages.gz
  fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
- 4bf45cd4791a714202fb49c071438bd8      532 main/binary-amd64/Packages
- 4ca5efd10c24bccfa7a47b003adf3eae      392 main/binary-amd64/Packages.gz
+ f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
+ 6d9453e79668274b0bceff9a6d42dabd      583 main/binary-amd64/Packages.gz
  063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
- f5611ff219d3ff96ec82f325d23d1c96      871 Release
+ 720b7e9e6e4fda32e1380a40a2a91693      871 Release
 SHA256:
- 64f4e2c8251d8af4887017e7c0e397049823421b64550d0153de845663a1fc3a      531 main/binary-arm64/Packages
- 5511f210abeb65e78c7f5533f056e90f05036a107b666c3346a453076e55226a      392 main/binary-arm64/Packages.gz
+ 9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
+ e18e4c593fa0bb85da74202c28dda70dfeff155333b9ff2729869c3084beff84      583 main/binary-arm64/Packages.gz
  1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
- 16b61a5271648083c80f9f588b324c61f949c5f673a35f364955cc997a87db07       29 main/binary-all/Packages.gz
+ c992b88231b7555b41ae28e719150c6949edadd1c17deaad87ba46e6dd08a0bc       29 main/binary-all/Packages.gz
  230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
- ebe99ecce22458a93e77cfb7c45d8aeb86745d92785df2329e7c01b78b36c67a      532 main/binary-amd64/Packages
- cb2fb985cc0db2c7933a879b9f6531515bd7d301121ca7876b1371486012bc02      392 main/binary-amd64/Packages.gz
+ 8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
+ d76f0abd69b6af28adec141917123fc0ffc488beb72bc1ea5485d9b9c4169c43      583 main/binary-amd64/Packages.gz
  f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
- 017c84cda848e23dff4159e2ab9f98530e0efc48601025364161acce2e0b67fc     1848 Release
+ c0d5589b2b39dd6743329433aff81825dbe46d444002389d0117c82574900da9     1848 Release
