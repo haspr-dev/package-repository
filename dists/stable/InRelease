@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Haspr
+Label: Haspr
+Suite: stable
+Codename: stable
+Architectures: amd64 arm64 all
+Components: main
+Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
+Date: Wed, 11 Nov 2026 13:23:31 +0000
+MD5Sum:
+ 46e62f700daf89947b585210b8b1d569      538 main/binary-arm64/Packages
+ 3630e53ce05f9b966c8a562eb8eade3e      396 main/binary-arm64/Packages.gz
+ e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
+ d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
+ 25a7b4d6b409efeeafac0a426b3313fd       29 main/binary-all/Packages.gz
+ fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
+ 6af46f4d00146605b52513342c782e87      539 main/binary-amd64/Packages
+ 564ecf7dc0b4f928a0f6c9625acdc768      396 main/binary-amd64/Packages.gz
+ 063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
+ 837841d43c58fb9193b3b31ca5e66bda      867 Release
+SHA256:
+ 22366d16e732920e5adfb7cd02ace6df36ba8c6da255866628d7a5859996ecae      538 main/binary-arm64/Packages
+ 75000c52b1a82263cadfaa13a46c363586aed5391ab1cb5af2524e9381efbaee      396 main/binary-arm64/Packages.gz
+ 1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
+ 15b8e6e869b6d2fc9beb76e53aa14bf255face79390d4aec52a0b88cabbab717       29 main/binary-all/Packages.gz
+ 230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
+ 1fb51991d6d69a22ecc9ee8cb1b6d4ce625011b28440face4d97c9e042ce9f83      539 main/binary-amd64/Packages
+ 158388dfdbd0774448e69dcc8d475c6c29ace955b3c060b1e4a7531617e0e185      396 main/binary-amd64/Packages.gz
+ f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
+ de75ee63bb1ccf3a0b6e960353ac589dbcc69e1b762ba81a557c5d14733f1a33     1844 Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE8fOdUaz8J3V79NkhRF0dqUITHA4FAmr0bFMACgkQRF0dqUIT
+HA4Q/A/8CjTDwVIWqxHjUS84vhsLIR7ywjMZ3v0+QHdQ1BSuI6nsiHuBjZbgQxDp
+FM116ZI7eHAlAStRlVsfP242zV6PGFyf3mmeRcLO/YQfnIRvxdcXSF1AynFuZUF2
+l6bpA6cXooe00kp4ysWyFY79zZox3LBGyMACnGUB/H4cewWe26PAi45LCetd6ZyL
+xIrMBu9NNGXfWKi9yoxnkLgnJ3FXDkoIJmvznlYR3BqY2GnQH8jvktlbkjQM4Mry
+EgKrVjnM3DE6Fy7ebxEa2SLSuLp38RAcp7S1pUdrRKA0UA3Kv0i7uP+ebu+dvQnq
+bLTkJwPZQ5YqwQ2pYJRtPiqEKXXoPEWM6+XgIRXvkiD64qtXp8J2leY1+3cTGnT6
+i9xgBBDEHhH0sOwUw0h+MKhc5PIZk+1P0CwfsAo8n2t/hANzDjHm5tnhefpSt8rs
+iLibJyFjWXjouW26tYK7iSszp+kKE4FuA4EhK1LMKn1AYdKEIcKXWooMiXgyveNC
+tlgmSlAexTD8OAkOT9M9lq+1IV97zO1cCn4YKwa31tw00tmbKbsxeHdYJjWI6WqY
+0h3AR+RwEfZQWHO4CdVxunRITlTGhOI3RsWe8oWOPec3RBZSW9d63T5LXmzV9KqI
+/WTmEbgWyRsrvmR9nLEg3XyuTJwO6d2KKgZJGy8jKZtTLI1/QsI=
+=QMUV
+-----END PGP SIGNATURE-----

@@ -1,0 +1,30 @@
+Origin: Haspr
+Label: Haspr
+Suite: bookworm
+Codename: bookworm
+Architectures: amd64 arm64 all
+Components: main
+Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
+Date: Wed, 11 Nov 2026 13:23:32 +0000
+MD5Sum:
+ 46e62f700daf89947b585210b8b1d569      538 main/binary-arm64/Packages
+ 7ac35d88c54f37d640524ecaaa8b1c21      396 main/binary-arm64/Packages.gz
+ e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
+ d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
+ 0c255e636bad064d1dc0739e7625e2e4       29 main/binary-all/Packages.gz
+ fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
+ 6af46f4d00146605b52513342c782e87      539 main/binary-amd64/Packages
+ 564ecf7dc0b4f928a0f6c9625acdc768      396 main/binary-amd64/Packages.gz
+ 063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
+ d0b1cfa3d6713f979479753dfbb9a86f      871 Release
+SHA256:
+ 22366d16e732920e5adfb7cd02ace6df36ba8c6da255866628d7a5859996ecae      538 main/binary-arm64/Packages
+ e45efc96e9da759d41254880087b81a42e41d8cd7c2bb86851940ac700ae9d5b      396 main/binary-arm64/Packages.gz
+ 1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
+ bd224c248ca3ef4840fb3132184e9a0dd687a650a2c7e478baed20d13ae26bfa       29 main/binary-all/Packages.gz
+ 230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
+ 1fb51991d6d69a22ecc9ee8cb1b6d4ce625011b28440face4d97c9e042ce9f83      539 main/binary-amd64/Packages
+ 158388dfdbd0774448e69dcc8d475c6c29ace955b3c060b1e4a7531617e0e185      396 main/binary-amd64/Packages.gz
+ f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
+ b98d70144e703f426e4cea16cf275ff83c8bbcb6494109276e0611abb9392ea0     1848 Release
