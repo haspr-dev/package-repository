@@ -89,4 +89,30 @@ EOF
   fi
 done
 
+# --- Build RPM Repository ---
+mkdir -p rpm
+if ls rpm/*.rpm >/dev/null 2>&1; then
+  echo "=== Building RPM Repository ==="
+  if command -v createrepo_c >/dev/null 2>&1; then
+    createrepo_c --update rpm/
+  elif command -v createrepo >/dev/null 2>&1; then
+    createrepo --update rpm/
+  else
+    echo "Warning: createrepo_c not found, skipping RPM index generation"
+  fi
+
+  if [ -f "rpm/repodata/repomd.xml" ]; then
+    if gpg --list-secret-keys packaging@haspr.dev >/dev/null 2>&1 || [ -n "${GPG_KEY_ID:-}" ]; then
+      GPG_OPTS=()
+      if [ -n "${GPG_KEY_ID:-}" ]; then
+        GPG_OPTS+=(-u "${GPG_KEY_ID}")
+      fi
+      echo "Signing RPM repomd.xml..."
+      gpg "${GPG_OPTS[@]}" --armor --detach-sign -o "rpm/repodata/repomd.xml.asc" --yes "rpm/repodata/repomd.xml"
+    else
+      echo "Notice: No secret GPG key found. Skipping RPM repomd.xml signing."
+    fi
+  fi
+fi
+
 echo "=== Repository index generation complete ==="

@@ -1,4 +1,4 @@
-name: Update Debian Repository
+name: Update Package Repository
 
 on:
   push:
@@ -24,7 +24,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: debian-repository
+  group: package-repository
   cancel-in-progress: false
 
 jobs:
@@ -36,10 +36,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install Debian Packaging Tools
+      - name: Install Packaging Tools
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y dpkg-dev gnupg gzip
+          sudo apt-get install -y dpkg-dev gnupg gzip createrepo-c
 
       - name: Import GPG Signing Key
         if: ${{ env.GPG_KEY != '' }}
@@ -52,22 +52,24 @@ jobs:
           cp haspr.asc gpgkey
           gpg --export packaging@haspr.dev > haspr-archive-keyring.gpg
 
-      - name: Fetch Debian Packages
+      - name: Fetch Packages
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p pool/main/h/haspr pool/main/h/haspr-api
+          mkdir -p pool/main/h/haspr pool/main/h/haspr-api rpm
           
           # 1. Fetch from go-haspr-cli releases
           echo "Fetching packages from haspr-dev/go-haspr-cli..."
           if [ -n "${{ inputs.repository }}" ] && [ "${{ inputs.repository }}" = "haspr-dev/go-haspr-cli" ] && [ -n "${{ inputs.tag }}" ]; then
             gh release download "${{ inputs.tag }}" --repo haspr-dev/go-haspr-cli --pattern "*.deb" --dir pool/main/h/haspr || true
+            gh release download "${{ inputs.tag }}" --repo haspr-dev/go-haspr-cli --pattern "*.rpm" --dir rpm || true
           else
-            # Download deb files from all recent releases
+            # Download deb and rpm files from all recent releases
             RELEASES=$(gh release list --repo haspr-dev/go-haspr-cli --limit 5 --json tagName --jq '.[].tagName')
             for tag in $RELEASES; do
-              echo "Downloading .deb from go-haspr-cli $tag..."
+              echo "Downloading packages from go-haspr-cli $tag..."
               gh release download "$tag" --repo haspr-dev/go-haspr-cli --pattern "*.deb" --dir pool/main/h/haspr || true
+              gh release download "$tag" --repo haspr-dev/go-haspr-cli --pattern "*.rpm" --dir rpm || true
             done
           fi
 
@@ -76,15 +78,18 @@ jobs:
           if gh release list --repo haspr-dev/haspr-api --limit 1 | grep -q .; then
             RELEASES_API=$(gh release list --repo haspr-dev/haspr-api --limit 5 --json tagName --jq '.[].tagName')
             for tag in $RELEASES_API; do
-              echo "Downloading .deb from haspr-api $tag..."
+              echo "Downloading packages from haspr-api $tag..."
               gh release download "$tag" --repo haspr-dev/haspr-api --pattern "*.deb" --dir pool/main/h/haspr-api || true
+              gh release download "$tag" --repo haspr-dev/haspr-api --pattern "*.rpm" --dir rpm || true
             done
           else
             echo "No releases found yet for haspr-api."
           fi
 
-          echo "Current pool inventory:"
+          echo "Current pool inventory (Debian):"
           find pool -type f -name "*.deb"
+          echo "Current RPM inventory:"
+          find rpm -type f -name "*.rpm"
 
       - name: Build Repository Metadata
         run: |
@@ -94,11 +99,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add haspr.asc gpgkey haspr-archive-keyring.gpg pool/ dists/ setup.sh README.md index.html CNAME
+          git add haspr.asc gpgkey haspr-archive-keyring.gpg pool/ dists/ rpm/ setup.sh README.md index.html CNAME
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "chore: update APT repository packages and metadata [skip ci]"
+            git commit -m "chore: update repository packages and metadata [skip ci]"
             git push origin main
           fi
 
@@ -107,10 +112,10 @@ jobs:
           # Keep gh-pages branch updated with the web-ready repository
           git branch -D gh-pages 2>/dev/null || true
           git checkout --orphan gh-pages
-          git add -f pool/ dists/ haspr.asc gpgkey haspr-archive-keyring.gpg setup.sh index.html README.md CNAME
+          git add -f pool/ dists/ rpm/ haspr.asc gpgkey haspr-archive-keyring.gpg setup.sh index.html README.md CNAME
           if git diff --staged --quiet; then
             echo "No changes for gh-pages."
           else
-            git commit -m "Deploy Debian APT repository to GitHub Pages"
+            git commit -m "Deploy Haspr packages to GitHub Pages"
             git push -f origin gh-pages
           fi

@@ -1,1 +1,2 @@
 pool/**/*.deb
+rpm/**/*.rpm
