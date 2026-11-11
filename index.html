@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haspr Debian / Ubuntu Repository</title>
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --border-color: #30363d;
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --accent-cyan: #0bddec;
+      --accent-blue: #199ee9;
+      --code-bg: #090d13;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .logo {
+      width: 110px;
+      height: 110px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+    p.lead {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.35rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.4rem;
+    }
+    pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.95rem;
+      color: var(--accent-cyan);
+      margin: 0.75rem 0;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      color: var(--accent-cyan);
+      background: rgba(11, 221, 236, 0.1);
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+    }
+    ul {
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    li { margin-bottom: 0.4rem; }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 3rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+    }
+    a {
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://raw.githubusercontent.com/haspr-dev/.github/main/assets/haspr-logo.svg" alt="Haspr Logo" class="logo" />
+      <h1>Haspr Debian / Ubuntu Repository</h1>
+      <p class="lead">Official APT package repository for Haspr CLI, background agent, and backend API.</p>
+    </header>
+
+    <div class="card">
+      <h2>⚡ Quick Setup (Automated)</h2>
+      <p>Run the official setup script to install the GPG key and add the repository:</p>
+      <pre>curl -fsSL https://haspr-dev.github.io/debian-repository/setup.sh | sudo bash</pre>
+      <p>Then install the package you need:</p>
+      <pre>sudo apt install haspr</pre>
+    </div>
+
+    <div class="card">
+      <h2>🛠️ Manual Setup (Step-by-Step)</h2>
+      <p><strong>1. Install required tools:</strong></p>
+      <pre>sudo apt-get update && sudo apt-get install -y curl ca-certificates</pre>
+
+      <p><strong>2. Download and verify the Haspr GPG key:</strong></p>
+      <pre>sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://haspr-dev.github.io/debian-repository/haspr-archive-keyring.gpg | sudo tee /etc/apt/keyrings/haspr-archive-keyring.gpg > /dev/null</pre>
+
+      <p><strong>3. Add the APT source repository:</strong></p>
+      <pre>cat &lt;&lt; 'EOF' | sudo tee /etc/apt/sources.list.d/haspr.sources
+Types: deb
+URIs: https://haspr-dev.github.io/debian-repository
+Suites: stable
+Components: main
+Signed-By: /etc/apt/keyrings/haspr-archive-keyring.gpg
+EOF</pre>
+
+      <p><strong>4. Update and install:</strong></p>
+      <pre>sudo apt-get update
+sudo apt-get install haspr</pre>
+    </div>
+
+    <div class="card">
+      <h2>📦 Available Packages</h2>
+      <ul>
+        <li><code>haspr</code> (or <code>go-haspr-cli</code>) &mdash; Fast CLI, auth agent, and Git/Docker/AWS/K8s credential helpers. (Architectures: <code>amd64</code>, <code>arm64</code>)</li>
+        <li><code>haspr-api-ce</code> &mdash; Community Edition backend API server package. (Architecture: <code>all</code>)</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>Haspr is an independent community project. Passbolt is a registered trademark of Passbolt SA.</p>
+      <p>Documentation: <a href="https://doc.haspr.dev">doc.haspr.dev</a> &bull; GitHub: <a href="https://github.com/haspr-dev">github.com/haspr-dev</a></p>
+    </footer>
+  </div>
+</body>
+</html>
