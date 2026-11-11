@@ -4,7 +4,7 @@
 
 set -euo pipefail
 
-REPO_URL="${HASPR_REPO_URL:-https://haspr-dev.github.io/debian-repository}"
+REPO_URL="${HASPR_REPO_URL:-https://package.haspr.dev}"
 KEYRING_DIR="/etc/apt/keyrings"
 KEYRING_FILE="${KEYRING_DIR}/haspr-archive-keyring.gpg"
 SOURCES_DIR="/etc/apt/sources.list.d"

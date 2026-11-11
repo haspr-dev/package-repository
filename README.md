@@ -15,7 +15,7 @@
 Run the automated setup script to add the GPG key and configure the APT sources:
 
 ```bash
-curl -fsSL https://haspr-dev.github.io/debian-repository/setup.sh | sudo bash
+curl -fsSL https://package.haspr.dev/setup.sh | sudo bash
 ```
 
 Then install the package you need:
@@ -37,14 +37,14 @@ sudo apt-get install -y curl ca-certificates
 ### 2. Add the Haspr GPG key
 ```bash
 sudo install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://haspr-dev.github.io/debian-repository/haspr-archive-keyring.gpg | sudo tee /etc/apt/keyrings/haspr-archive-keyring.gpg > /dev/null
+curl -fsSL https://package.haspr.dev/haspr-archive-keyring.gpg | sudo tee /etc/apt/keyrings/haspr-archive-keyring.gpg > /dev/null
 ```
 
 ### 3. Add the APT source repository
 ```bash
 cat << 'EOF' | sudo tee /etc/apt/sources.list.d/haspr.sources
 Types: deb
-URIs: https://haspr-dev.github.io/debian-repository
+URIs: https://package.haspr.dev
 Suites: stable
 Components: main
 Signed-By: /etc/apt/keyrings/haspr-archive-keyring.gpg

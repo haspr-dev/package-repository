@@ -110,7 +110,7 @@
     <div class="card">
       <h2>⚡ Quick Setup (Automated)</h2>
       <p>Run the official setup script to install the GPG key and add the repository:</p>
-      <pre>curl -fsSL https://haspr-dev.github.io/debian-repository/setup.sh | sudo bash</pre>
+      <pre>curl -fsSL https://package.haspr.dev/setup.sh | sudo bash</pre>
       <p>Then install the package you need:</p>
       <pre>sudo apt install haspr</pre>
     </div>
@@ -122,12 +122,12 @@
 
       <p><strong>2. Download and verify the Haspr GPG key:</strong></p>
       <pre>sudo install -m 0755 -d /etc/apt/keyrings
-curl -fsSL https://haspr-dev.github.io/debian-repository/haspr-archive-keyring.gpg | sudo tee /etc/apt/keyrings/haspr-archive-keyring.gpg > /dev/null</pre>
+curl -fsSL https://package.haspr.dev/haspr-archive-keyring.gpg | sudo tee /etc/apt/keyrings/haspr-archive-keyring.gpg > /dev/null</pre>
 
       <p><strong>3. Add the APT source repository:</strong></p>
       <pre>cat &lt;&lt; 'EOF' | sudo tee /etc/apt/sources.list.d/haspr.sources
 Types: deb
-URIs: https://haspr-dev.github.io/debian-repository
+URIs: https://package.haspr.dev
 Suites: stable
 Components: main
 Signed-By: /etc/apt/keyrings/haspr-archive-keyring.gpg

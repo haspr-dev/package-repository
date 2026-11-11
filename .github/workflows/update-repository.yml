@@ -56,18 +56,18 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
-          mkdir -p pool/main/g/go-haspr-cli pool/main/h/haspr-api
+          mkdir -p pool/main/h/haspr pool/main/h/haspr-api
           
           # 1. Fetch from go-haspr-cli releases
           echo "Fetching packages from haspr-dev/go-haspr-cli..."
           if [ -n "${{ inputs.repository }}" ] && [ "${{ inputs.repository }}" = "haspr-dev/go-haspr-cli" ] && [ -n "${{ inputs.tag }}" ]; then
-            gh release download "${{ inputs.tag }}" --repo haspr-dev/go-haspr-cli --pattern "*.deb" --dir pool/main/g/go-haspr-cli || true
+            gh release download "${{ inputs.tag }}" --repo haspr-dev/go-haspr-cli --pattern "*.deb" --dir pool/main/h/haspr || true
           else
             # Download deb files from all recent releases
             RELEASES=$(gh release list --repo haspr-dev/go-haspr-cli --limit 5 --json tagName --jq '.[].tagName')
             for tag in $RELEASES; do
               echo "Downloading .deb from go-haspr-cli $tag..."
-              gh release download "$tag" --repo haspr-dev/go-haspr-cli --pattern "*.deb" --dir pool/main/g/go-haspr-cli || true
+              gh release download "$tag" --repo haspr-dev/go-haspr-cli --pattern "*.deb" --dir pool/main/h/haspr || true
             done
           fi
 
@@ -94,7 +94,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add haspr.asc gpgkey haspr-archive-keyring.gpg pool/ dists/ setup.sh README.md index.html
+          git add haspr.asc gpgkey haspr-archive-keyring.gpg pool/ dists/ setup.sh README.md index.html CNAME
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
@@ -107,7 +107,7 @@ jobs:
           # Keep gh-pages branch updated with the web-ready repository
           git branch -D gh-pages 2>/dev/null || true
           git checkout --orphan gh-pages
-          git add -f pool/ dists/ haspr.asc gpgkey haspr-archive-keyring.gpg setup.sh index.html README.md
+          git add -f pool/ dists/ haspr.asc gpgkey haspr-archive-keyring.gpg setup.sh index.html README.md CNAME
           if git diff --staged --quiet; then
             echo "No changes for gh-pages."
           else
