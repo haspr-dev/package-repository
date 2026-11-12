@@ -5,26 +5,26 @@ Codename: noble
 Architectures: amd64 arm64 all
 Components: main
 Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
-Date: Wed, 11 Nov 2026 14:04:19 +0000
+Date: Thu, 12 Nov 2026 00:09:59 +0000
 MD5Sum:
  086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
- b955ebb010b9c6b12a101e42a6136515      583 main/binary-arm64/Packages.gz
+ a1865e1d24efad24128010dca742bd94      583 main/binary-arm64/Packages.gz
  e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
  d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
- 20dc0e5ffa1f7f88f87bced958d5800a       29 main/binary-all/Packages.gz
+ 480fda57a2f1fea6078528f4a3cc3aa3       29 main/binary-all/Packages.gz
  fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
  f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
- 71ead9c3a182d764733175c6a965af33      583 main/binary-amd64/Packages.gz
+ 12777ef295696cb2f4e7040a90fb0be6      583 main/binary-amd64/Packages.gz
  063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
- 9de4adc7ab53041f6e27d0c867318bed      865 Release
+ e65b64944f7bfce273e1512712074170      865 Release
 SHA256:
  9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
- 60e8783399b7e32783bddf3ade181fd5223ad85cdd3142a85c3a4a2cc5b5abfd      583 main/binary-arm64/Packages.gz
+ f880c878f9a324efd943da2a4daf58d83225839a9bfc1bfdaaff6812cb6c1c5d      583 main/binary-arm64/Packages.gz
  1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
- 6781be7bdaa245a8c70e07716fb91129c588ca9aa28a7aa22bad2f921f57a43a       29 main/binary-all/Packages.gz
+ a74b89ed8e3a40ce493bba2f13d8a4766a8bd5a82978fc5e6ff47c6019eda0fd       29 main/binary-all/Packages.gz
  230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
  8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
- 3fcac0a7d89f70ade023dd20b1b1857b8b43609914471b48082bdecf9bcc764a      583 main/binary-amd64/Packages.gz
+ 7a64e1abf546adde925ec449a8661dd4272476cf6823d3984d9ac01108880bf4      583 main/binary-amd64/Packages.gz
  f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
- 08ae017f9fca16a49de62be891e0d7268245f5e996cad2ac49da5a29598d2470     1842 Release
+ 408d83f02b7922ca18c5eb2f8e78ef38b5e4ae14d608d7e0d90e994dcb4f0c38     1842 Release
