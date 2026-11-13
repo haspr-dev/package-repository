@@ -5,26 +5,26 @@ Codename: bookworm
 Architectures: amd64 arm64 all
 Components: main
 Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
-Date: Fri, 13 Nov 2026 14:29:01 +0000
+Date: Fri, 13 Nov 2026 23:20:11 +0000
 MD5Sum:
- 6ad6ca2b913e2e7326c28c58d9e1bfd4      241 Release
+ d3a5ce7b48d23eaebb720afa7478aa29      241 Release
  086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
  e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
- 4cebad6535a6528a266c6b6153627e6a      583 main/binary-arm64/Packages.gz
+ 9618fbcfebd9af46d2f1d512ec25cb63      583 main/binary-arm64/Packages.gz
  d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
  fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
- cdf88f7594da754bdeb3ba99046860ca       29 main/binary-all/Packages.gz
+ fb677e1b3de403a0f6ee1b2ac6c81f51       29 main/binary-all/Packages.gz
  f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
  063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
- f31fd60d6d2e036f2ed4b7e2f109da67      583 main/binary-amd64/Packages.gz
+ 674b904f31165c7a69fd5645560e0e90      583 main/binary-amd64/Packages.gz
 SHA256:
- 946bef04a893eaeaf48cfc53ffec4cc80f3fa621c7677a833111bf6e4fe1e58a      930 Release
+ a5c5b5a008856080070491c242fcddea6643bb7405882400487b4a707c200e11      930 Release
  9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
  1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
- cdc515107bd8f1bc36d1aa6a4ceb291fffe6cda87fbf2ac9c707169bb478b24e      583 main/binary-arm64/Packages.gz
+ 5f44914a1d153bc544672ba000de5e7cf1090680c202fd1a562193409bc08463      583 main/binary-arm64/Packages.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
  230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
- f4e7bfef2e0b748cd16203895b5319e5effb03d2599c80570d6afa2cba5c8e5d       29 main/binary-all/Packages.gz
+ 4edd146070e0ee08d61aa7ddd258f7d897cf9961f815bcbba7fd4c9a8b937493       29 main/binary-all/Packages.gz
  8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
  f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
- f4f0b08c45ddb5fef0723988046472f46f5f3dd8c01cdf9deafb02c9166ab973      583 main/binary-amd64/Packages.gz
+ e640b3bfe7f534d67f25580046a9b0b751debb15ba0ee8d553b1d6dde56a2066      583 main/binary-amd64/Packages.gz
