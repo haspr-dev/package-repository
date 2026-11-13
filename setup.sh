@@ -87,10 +87,21 @@ EOF
   dnf|yum)
     echo "Detected RHEL/Fedora/CentOS/Rocky/AlmaLinux distribution (${PKG_MGR})."
 
+    RPM_GPG_DIR="/etc/pki/rpm-gpg"
+    RPM_GPG_FILE="${RPM_GPG_DIR}/RPM-GPG-KEY-haspr"
     YUM_REPOS_DIR="/etc/yum.repos.d"
     REPO_FILE="${YUM_REPOS_DIR}/haspr.repo"
 
-    mkdir -p "${YUM_REPOS_DIR}"
+    mkdir -p "${RPM_GPG_DIR}" "${YUM_REPOS_DIR}"
+
+    echo "Downloading and importing Haspr RPM GPG key..."
+    if command -v curl >/dev/null 2>&1; then
+      curl -fsSL "${REPO_URL}/haspr.asc" -o "${RPM_GPG_FILE}"
+    else
+      wget -qO "${RPM_GPG_FILE}" "${REPO_URL}/haspr.asc"
+    fi
+    chmod 0644 "${RPM_GPG_FILE}"
+    rpm --import "${RPM_GPG_FILE}" || true
 
     echo "Configuring YUM/DNF repository in ${REPO_FILE}..."
     cat << EOF > "${REPO_FILE}"
@@ -100,17 +111,13 @@ baseurl=${REPO_URL}/rpm/
 enabled=1
 gpgcheck=1
 repo_gpgcheck=1
-gpgkey=${REPO_URL}/haspr.asc
+gpgkey=file://${RPM_GPG_FILE}
+       ${REPO_URL}/haspr.asc
 EOF
     chmod 0644 "${REPO_FILE}"
 
-    if command -v rpm >/dev/null 2>&1; then
-      echo "Importing Haspr RPM GPG key..."
-      rpm --import "${REPO_URL}/haspr.asc" || true
-    fi
-
     echo "Updating ${PKG_MGR} package cache..."
-    "${PKG_MGR}" check-update -q || true
+    "${PKG_MGR}" check-update -y -q || true
 
     echo ""
     echo "=== Haspr RPM Repository Successfully Configured! ==="
