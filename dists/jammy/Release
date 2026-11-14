@@ -5,26 +5,26 @@ Codename: jammy
 Architectures: amd64 arm64 all
 Components: main
 Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
-Date: Sat, 14 Nov 2026 05:20:46 +0000
+Date: Sat, 14 Nov 2026 13:06:21 +0000
 MD5Sum:
- 4a0038c68dc07ecc780a1080d1239c6c      235 Release
- f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
- 063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
- d6bde7fdbac98512f7fa4aca86b9e5ba      583 main/binary-amd64/Packages.gz
+ bda5e9466efe510bbb4691ceb9f08fc7      235 Release
  086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
  e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
- e3723b5b2594a0354d6330ea35163620      583 main/binary-arm64/Packages.gz
+ baf5b0d7cfbf622888f50eb0c8e476e4      583 main/binary-arm64/Packages.gz
  d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
  fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
- 804dec5c914e1b7949392aa6034b73f0       29 main/binary-all/Packages.gz
+ 95cd87fe5f23291f017c1c94da7b7c5e       29 main/binary-all/Packages.gz
+ f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
+ 063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
+ b779f123e4d5a1ce2d3ed50398529096      583 main/binary-amd64/Packages.gz
 SHA256:
- f25835622e1826e34ae016fb5f1ec82b4ca32978ecdadeff085585348990ee40      924 Release
- 8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
- f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
- ec55ab022979f1c40631dad83ebbd9a8395f2a8895f1c21eecae26f8a7d94631      583 main/binary-amd64/Packages.gz
+ 641e984c09fba0a5ca407c4314019dbfe7980f7bbfb846d1b2a6a445de9493c8      924 Release
  9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
  1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
- 3b27a520c8b57e3729359b66f10325b7c724cd0cd1a81f9e0c0fa141aed9a11a      583 main/binary-arm64/Packages.gz
+ a089a24a7de912b3acc837a30313f3925697d6bd1ce276b3882666e7ccc65180      583 main/binary-arm64/Packages.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
  230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
- 2a6eba9551ffdff8c4f9e44f799dc7de5461f989f7730687d78c04bd8f9c47e7       29 main/binary-all/Packages.gz
+ 278a4c6039acc1af0b8b99434a5d4d88ac0787184484f87852532fd0056f3e90       29 main/binary-all/Packages.gz
+ 8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
+ f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
+ 124f11e49da4bca1d721530991f5881b6d05ece2df5e65daa69c5bfde53b708d      583 main/binary-amd64/Packages.gz

@@ -8,42 +8,42 @@ Codename: trixie
 Architectures: amd64 arm64 all
 Components: main
 Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
-Date: Sat, 14 Nov 2026 05:20:44 +0000
+Date: Sat, 14 Nov 2026 13:06:18 +0000
 MD5Sum:
- 52ef636e241cec745333320d94efe873      237 Release
- f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
- 063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
- 26322feae17fa38c90225102c4f64222      583 main/binary-amd64/Packages.gz
+ e1a3aa9e06d4159c7b4d067e7322eb5e      237 Release
  086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
  e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
- 004184fc1932915c178538d3fd2fcec1      583 main/binary-arm64/Packages.gz
+ eac80f59c18928a210f40c99255f65c6      583 main/binary-arm64/Packages.gz
  d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
  fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
- 57bbc2051147f694cd0db53f8be03e8c       29 main/binary-all/Packages.gz
+ a894d8d6c55f211bada9f6d92b7ef040       29 main/binary-all/Packages.gz
+ f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
+ 063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
+ b24df03d0d3275c21568798e3751efbb      583 main/binary-amd64/Packages.gz
 SHA256:
- 96faff988dfe7727b1d3328fac273c8435a53e4d27224f04311efa37d08f1ee9      926 Release
- 8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
- f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
- 0214144db6446e8b804c663a6c10ad48fc54622402aba69ac3450b59549acb46      583 main/binary-amd64/Packages.gz
+ 3ba9b871a2039105045df1184040c862112a39cd6d6c54a7501d98ce648c833b      926 Release
  9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
  1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
- 8cb17b8a956a2e981d7fddd6487470ca63cca3cdb6cb013900df4d205666ff52      583 main/binary-arm64/Packages.gz
+ b08f5dde61ccdda04e0514349a0bfe0f4f4078aa405f03f12ea5d9b67b4ee5d8      583 main/binary-arm64/Packages.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
  230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
- fbec8dfcfad92f9af9bc5a6f22e05720bcb6ae1cae167908a0c64e468f40b91e       29 main/binary-all/Packages.gz
+ 5185910b733c10da8b93f69c53b6636c4f6112c1a4b7c729d27248929cf6c97f       29 main/binary-all/Packages.gz
+ 8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
+ f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
+ ca6bf2d35e531f28f7fcfd9808007e1798c6f65d5a06616dc0d4af107d6d50e0      583 main/binary-amd64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE8fOdUaz8J3V79NkhRF0dqUITHA4FAmr376wACgkQRF0dqUIT
-HA6oIxAAmWMlhPXnMNIqjqJVorBAhFq3S4x4nsdZFTSxUprM5bFh8Us9j0EASiwF
-fj3I1o3NQKDVLNUqZLaouQvkmqiHKgx59CD47qyMmzXtiAoSCUvdHMARg7LYfPyQ
-3bTnMStpasylq7PQkq2r2SKjh89KugYwe/Du9CQtKBVGcYfYORU+mZilXyWPGCnG
-7KgCqIWpPLdxUeDwo9tChxGncUAXi8DtKTwKDi3JkfykjCGXlQRSbFPA1aFf3tbw
-4DR/46KUevMghQ/8IhyfzwMC1ZlsWL7XO14zaaL0ACl5U/KkQANKRNVjBg67xltK
-CH6L8iNq5RRMGZNyzCKjrhvor0DjxtAMkHcvbjUcXOtkjtNrOpYG0+Xpj9qay+hT
-AzkxNJX0XnoLXynGhyYQbU1GHBaQVSNRGD0wzwbvCxI50F9p6tglTt4DLdVIQGK5
-ePXkwCjQFSe3PuZNa1x5p7phK/FXyKwpGEj3s9oe1vOtaW0PtcDNPxz7kF8uJeAX
-QFsYearlQukDuirUhDLly26OS86/trlmEBZ46XtvaiEjrE/ObD/CFnlNR/41LnbS
-9dM2iSK28m8b8CVccFMMF2T8x16/SXRBFpwtViQrl9VR3b7ztqHQYZAuukGObbYt
-xiuKaYeQALbKxzSf75HOwqxlPz3CoABRONTEQ4+77Zeuu6Wf7LU=
-=l8YR
+iQIzBAEBCgAdFiEE8fOdUaz8J3V79NkhRF0dqUITHA4FAmr4XMoACgkQRF0dqUIT
+HA7M0Q/6A+/RMcvlqCpHeGdFub3HnrKgeADp+86DIiOPjNeMTu1Ej7gREEjv9LDj
+/YnkQ99mqQqZjHTXrpgXg33xrSQ8GQGYCyMNJeDKcY9JduAdQ4O893ZONhQmL/rw
+HK5nWQ4M8tDkm7Qh0CkZPB9EX+fmpULJUo/BkFbW79riyO/kGEEOF7Om1lncYcfF
+JoevgQ6T2GdDd4SrYGbCHX+iTvnbCnvG1Cs1kIhlhUDfksBJnqLTRgVkxWRALWve
+YZEbTT1fZs+x31Ecs/+8XGQZyJ68h7tjjXRAQsbz1+gB/M78VsV9YBWHdjOebTUK
+3Y0S/gHLf/FWkXsMNsi72QbOaijeNUCjSjMlXoeec6m0Hw5Hgf4jGMXr4bqhE4AM
+kcI82qYopho8jtP0fV/0dN8nwkTTwn51sRBww3x92oTUSIHw4tZvokhD1v2P6BFe
+IR+ePdUVeqYvcoVj0/p19QF0i5HgT0Oln29oEeMkvYmQo0+C3srkv1ECqBS9iALK
+48uG+yxuEDcC+uEhL/3TG29C1hde+mrbzpc3fbfYSNB57alBccIqUsFgXerp8iRM
+Dz/AN18Shm9bQVFV0rPD0X/3x/5XfaImaDCF0OIZfxCtSqfwbkbhUS+deYwFJxIG
+hQSQW5Zo85ct2VW3Y/vBV6AgsMbh4OTwFgWBIX4FMK38aRtAmwM=
+=95mN
 -----END PGP SIGNATURE-----
