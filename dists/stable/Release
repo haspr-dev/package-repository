@@ -1,0 +1,30 @@
+Origin: Haspr
+Label: Haspr
+Suite: stable
+Codename: stable
+Architectures: amd64 arm64 all
+Components: main
+Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
+Date: Sat, 14 Nov 2026 13:06:15 +0000
+MD5Sum:
+ 28ec874a66f280c1ae05888eada32284      237 Release
+ 086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
+ e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
+ 769a3712c744371ce89a7ed87f121097      583 main/binary-arm64/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
+ fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
+ f2c275bc75ae6d556a0f95b16bf0233d       29 main/binary-all/Packages.gz
+ f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
+ 063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
+ 37cf5dfc9c7701c67c92decf21a4188d      583 main/binary-amd64/Packages.gz
+SHA256:
+ d9f081219c00ef2c78d37dcc8aff95d01ab2f7ed0b964e82ea54ad249065fa87      926 Release
+ 9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
+ 1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
+ 0c5c036b61f2c02c799a216fcf78a03e11bc4e3c2a5e5ea99cbc88d9daff7814      583 main/binary-arm64/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
+ 230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
+ ca1453b0b8a01406fe599d2350741586224cd15788c2093fce52fceb0e25909d       29 main/binary-all/Packages.gz
+ 8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
+ f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
+ 9bb5a3670e35ac9d2dbff85f0555ca72e58afde5522c40ce6fcba4d13b101bf1      583 main/binary-amd64/Packages.gz

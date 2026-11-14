@@ -1,0 +1,121 @@
+name: Update Package Repository
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      repository:
+        description: 'Specific repository to fetch packages from (e.g. haspr-dev/go-haspr-cli)'
+        required: false
+        type: string
+      tag:
+        description: 'Specific release tag to fetch (e.g. v0.6.0)'
+        required: false
+        type: string
+  repository_dispatch:
+    types: [package-upload, new-release]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: package-repository
+  cancel-in-progress: false
+
+jobs:
+  build-and-sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Install Packaging Tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y dpkg-dev gnupg gzip createrepo-c
+
+      - name: Import GPG Signing Key
+        if: ${{ env.GPG_KEY != '' }}
+        env:
+          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+        run: |
+          echo "${GPG_KEY}" | gpg --batch --import
+          # Ensure public keys in repository match
+          gpg --armor --export packaging@haspr.dev > haspr.asc
+          cp haspr.asc gpgkey
+          gpg --export packaging@haspr.dev > haspr-archive-keyring.gpg
+
+      - name: Fetch Packages
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir -p pool/main/h/haspr pool/main/h/haspr-api rpm
+          
+          # 1. Fetch from go-haspr-cli releases
+          echo "Fetching packages from haspr-dev/go-haspr-cli..."
+          if [ -n "${{ inputs.repository }}" ] && [ "${{ inputs.repository }}" = "haspr-dev/go-haspr-cli" ] && [ -n "${{ inputs.tag }}" ]; then
+            gh release download "${{ inputs.tag }}" --repo haspr-dev/go-haspr-cli --pattern "*.deb" --dir pool/main/h/haspr || true
+            gh release download "${{ inputs.tag }}" --repo haspr-dev/go-haspr-cli --pattern "*.rpm" --dir rpm || true
+          else
+            # Download deb and rpm files from all recent releases
+            RELEASES=$(gh release list --repo haspr-dev/go-haspr-cli --limit 5 --json tagName --jq '.[].tagName')
+            for tag in $RELEASES; do
+              echo "Downloading packages from go-haspr-cli $tag..."
+              gh release download "$tag" --repo haspr-dev/go-haspr-cli --pattern "*.deb" --dir pool/main/h/haspr || true
+              gh release download "$tag" --repo haspr-dev/go-haspr-cli --pattern "*.rpm" --dir rpm || true
+            done
+          fi
+
+          # 2. Fetch from haspr-api releases
+          echo "Fetching packages from haspr-dev/haspr-api..."
+          if gh release list --repo haspr-dev/haspr-api --limit 1 | grep -q .; then
+            RELEASES_API=$(gh release list --repo haspr-dev/haspr-api --limit 5 --json tagName --jq '.[].tagName')
+            for tag in $RELEASES_API; do
+              echo "Downloading packages from haspr-api $tag..."
+              gh release download "$tag" --repo haspr-dev/haspr-api --pattern "*.deb" --dir pool/main/h/haspr-api || true
+              gh release download "$tag" --repo haspr-dev/haspr-api --pattern "*.rpm" --dir rpm || true
+            done
+          else
+            echo "No releases found yet for haspr-api."
+          fi
+
+          echo "Current pool inventory (Debian):"
+          find pool -type f -name "*.deb"
+          echo "Current RPM inventory:"
+          find rpm -type f -name "*.rpm"
+
+      - name: Build Repository Metadata
+        run: |
+          ./scripts/build-repository.sh
+
+      - name: Commit Updated Repository Metadata and Pool
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add haspr.asc gpgkey haspr-archive-keyring.gpg pool/ dists/ rpm/ setup.sh README.md index.html CNAME
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: update repository packages and metadata [skip ci]"
+            git push origin main
+          fi
+
+      - name: Deploy to GitHub Pages Branch
+        run: |
+          # Keep gh-pages branch updated with the web-ready repository
+          git branch -D gh-pages 2>/dev/null || true
+          git checkout --orphan gh-pages
+          git add -f pool/ dists/ rpm/ haspr.asc gpgkey haspr-archive-keyring.gpg setup.sh index.html README.md CNAME
+          if git diff --staged --quiet; then
+            echo "No changes for gh-pages."
+          else
+            git commit -m "Deploy Haspr packages to GitHub Pages"
+            git push -f origin gh-pages
+          fi
