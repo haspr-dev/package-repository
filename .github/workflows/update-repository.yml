@@ -39,7 +39,7 @@ jobs:
       - name: Install Packaging Tools
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y dpkg-dev gnupg gzip createrepo-c
+          sudo apt-get install -y dpkg-dev gnupg gzip createrepo-c rpm
 
       - name: Import GPG Signing Key
         if: ${{ env.GPG_KEY != '' }}

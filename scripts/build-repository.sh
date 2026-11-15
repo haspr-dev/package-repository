@@ -93,6 +93,18 @@ done
 mkdir -p rpm
 if ls rpm/*.rpm >/dev/null 2>&1; then
   echo "=== Building RPM Repository ==="
+  if gpg --list-secret-keys packaging@haspr.dev >/dev/null 2>&1 || [ -n "${GPG_KEY_ID:-}" ]; then
+    GPG_KEY_NAME="${GPG_KEY_ID:-packaging@haspr.dev}"
+    if command -v rpmsign >/dev/null 2>&1; then
+      echo "Signing RPM packages with key: ${GPG_KEY_NAME}..."
+      for rpm_file in rpm/*.rpm; do
+        if [ -f "$rpm_file" ]; then
+          rpmsign --addsign --key-id="${GPG_KEY_NAME}" "$rpm_file" || true
+        fi
+      done
+    fi
+  fi
+
   if command -v createrepo_c >/dev/null 2>&1; then
     createrepo_c --update rpm/
   elif command -v createrepo >/dev/null 2>&1; then
