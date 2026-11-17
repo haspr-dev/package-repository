@@ -8,42 +8,42 @@ Codename: noble
 Architectures: amd64 arm64 all
 Components: main
 Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
-Date: Tue, 17 Nov 2026 01:41:25 +0000
+Date: Tue, 17 Nov 2026 15:37:54 +0000
 MD5Sum:
  f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
- b4be7c6d4fb7c76e28d1a7c5ec5ccadd      583 main/binary-amd64/Packages.gz
+ 377c59b11783234f4c7a2a5040904faf      583 main/binary-amd64/Packages.gz
  063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
  086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
- fefd7fe2607177746956046d8b4c57d5      583 main/binary-arm64/Packages.gz
+ ce5b210189418f2425d6c9c688d2d9a2      583 main/binary-arm64/Packages.gz
  e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
  d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
- c6b6b85e30dcf5e5f3a1f5f9d4f68ab8       29 main/binary-all/Packages.gz
+ ae729aeeff18098ec3307cb22645906e       29 main/binary-all/Packages.gz
  fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
- f7d14247c477450c6b63eb42bb0bffad      865 Release
+ 8108c430dbadf05636bdd302c55f5786      865 Release
 SHA256:
  8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
- 31813a92381ceab43b63b33cd0e416eaadeb7308be262a5763882a18e95ccd1c      583 main/binary-amd64/Packages.gz
+ 419fa9e1b03ef0685be4fafc6cd78dfab2f99ab2dfc38aa02b837daa3412a7c0      583 main/binary-amd64/Packages.gz
  f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
  9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
- 35a6f01acb5f9912271c408e658decb3d6db3e8e4d06db314e2c7cca0200f563      583 main/binary-arm64/Packages.gz
+ cafa4eadb45cd2b51fda4d255ff9c189de47855471a182e746045c0309c0ba76      583 main/binary-arm64/Packages.gz
  1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
- 79d369a734ee1314df8a0664047ee9f21f4b9f39ffa80ca266b328f36a033cd4       29 main/binary-all/Packages.gz
+ 9b5ff1b5e5958367684f00f3cc3b575ec534a1e51932773e2f13f3911a243ca8       29 main/binary-all/Packages.gz
  230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
- 5068a636665cd0af10255651c4599fc557d526d2e9a95114410c28ffe98a6855     1842 Release
+ 1d501f6ee5c99162a69c3fbb886fbb853bf1d32013b0e9c61bbe88a59674e562     1842 Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE8fOdUaz8J3V79NkhRF0dqUITHA4FAmr7sMUACgkQRF0dqUIT
-HA4rxxAAr4cyM0n3ok5sroN8QnBl+vM4Xdd77oQUdq5SDkdsPtZLl5Y3jmD1cc4+
-ia2Bb59Tl8Gf3ybrYie+B0+U3Szwifzz9GC2YRW3/KTCyuLOCv7EAAtvpTGp1Tnq
-vEPLT7I1ryp/9omIqeEULf1mzpyYA0P63y5wt3QPUrzKHnHluk3+WwhQcl5B5dyS
-4RQQihLsTj0aOXJSmiGwU74OxjCNBMFSczZ+Lh3meMXULU0nhR+kFTe3Bggikrqq
-22tNfiKBljmKJqb6/FBJLu1uYXHsHYdtfPfN5iwukgRTPGOAAhMU7zYB+Tv+HI9V
-G9n5FFHdsdgVelfMLl03KTN7+ezdKY1lyhgjwilxhqtFSdghThBguwMLHiBWtMBb
-1tHNK3xg3lU7G62HiU6nM4MtWILSjRJbqZ4WRk3m6te2mMpWOLR35tzvkL0Uj0AE
-/F6ppdA81HwBeKqm/GH4ATgAKjyda7/E51yMiPVTHVzU8kvJEkQEi4luhKpag28W
-6q8w5sTWGd/Gcnpv9JD2iUVFP+QezuQSqMb2ZvNOho88KeK+QJqqspumEQUdgdtT
-E/JWd1u9a0MFLfWi0StIdncND4/6LzjJtNJJndo2eVLincTwf4YtuOLrogM7oVIO
-i4sh21TOCsVgs2t8vlv/VN5llVjuA0u527DfaXjJAR203zDeWIs=
-=rmGJ
+iQIzBAEBCgAdFiEE8fOdUaz8J3V79NkhRF0dqUITHA4FAmr8dNIACgkQRF0dqUIT
+HA57gg//Si/u8UwWAnphFWjUL8awMlnXrjfIy49B7McZbAbgz3hwGaoceJzyFB2M
+QP3dLABgfcFx5PkW4gnveDL40oXxadcBm34Im0g933PU2LumsMOxzP6+CEjDIhdX
+hPlJ3iZB2tUNrgSjvvbiyc1aC6hhwL6KehFhOyTTEOHoVw9erGOotbB3Hq5y5GtD
+vtikzzjnuGlLMgjxsAY1TVOamzZIZwYLo1RepWvPvDYzY6R7uoMy73Cn0R3QYCqy
+Yb6UfX/iVkCX+0z11dyei8X6oWDvpwoevFcnDH8IZ/kesROOJwfIFyjEk1TAGTXa
+dwKO9VKbq++EesiPa/Sm9BG9u82Rm5NT4KVv3wIF4Q1cfDoEtDFVCKL8zBcJ8bXh
+yY4nTEYlUyD8FfuCmc9POeNSaxeElHIuHU7ExOISYwb7Esj16Ui0ZCsOTGjx3PLH
+piSFVSbVfavgbbDxHgnfhpSyvqNzRjszNBy6h5CrHE6VD9fEfEiVzqXjRvpcCY/x
+ODZO84sVW1YoDTHOlAFFNBj4695EuHyNBq5Fs19o93aRQOhGIXyB59gFK4cL1kqL
+uEAwrovjc11g2b4JPMBBS03FRsvYzsYMly5DcAW/2JTK73MZULOU0CmIp/S+14dv
+p8yYRVCzj90Z9S03L2A5x1CoSma2lPBi/bTqvS0quV59IrcgPcQ=
+=JfdV
 -----END PGP SIGNATURE-----
