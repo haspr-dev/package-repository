@@ -5,26 +5,26 @@ Codename: noble
 Architectures: amd64 arm64 all
 Components: main
 Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
-Date: Wed, 18 Nov 2026 15:15:35 +0000
+Date: Wed, 18 Nov 2026 23:58:42 +0000
 MD5Sum:
  f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
- 68fb3aa420d93cd0e2b556778ef5c319      583 main/binary-amd64/Packages.gz
+ 68f7eab869eac0d228d495ec2dbbaf89      583 main/binary-amd64/Packages.gz
  063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
  086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
- c880f9126193d546a4a187f855503156      583 main/binary-arm64/Packages.gz
+ 392e485f9df8c6e1fb47002eda447d64      583 main/binary-arm64/Packages.gz
  e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
  d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
- 7c604d09a5a7331f42c8347aee5ef48e       29 main/binary-all/Packages.gz
+ 15fd5ad1c8187bb585c63d4071d8f976       29 main/binary-all/Packages.gz
  fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
- 7db4a86fe1cfdc1127547730e6d6accd      865 Release
+ 71e49ff9de479c4f3ecd0aba76712e9f      865 Release
 SHA256:
  8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
- eab7729e40ddf4666bccba834d1e229fd44501cf34b3fc6e5e27261d75ad023a      583 main/binary-amd64/Packages.gz
+ 6bbba7cc6b61ce38b61382aa431eb7ce58c755e7e10bf616152aacc195257885      583 main/binary-amd64/Packages.gz
  f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
  9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
- d075c15d3bd88897bb9538055e14aa82d69c3897b0b77d7b9675b39abdb32a85      583 main/binary-arm64/Packages.gz
+ 23d1ee9c3df23845e138fa2a027abef29789104722e34c68aa646c363175c7cc      583 main/binary-arm64/Packages.gz
  1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
- 0cb9004fb9b6da05232f4d15edacc7b5d48f8d9c68d37738655caeccd690d9fc       29 main/binary-all/Packages.gz
+ cee62a1e7afa495ac8c390c322e06434ac71b459359713b0e4a9f646af2f29e2       29 main/binary-all/Packages.gz
  230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
- 4509804be82a8a2dfcb976c652980231f0d3e20bf7b4ee9ad7d217076587ea0c     1842 Release
+ d53f0ee58b46153bed91428ede5e1029616e7e62c06d7de69428585c099104be     1842 Release
