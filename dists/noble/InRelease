@@ -8,42 +8,42 @@ Codename: noble
 Architectures: amd64 arm64 all
 Components: main
 Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
-Date: Tue, 17 Nov 2026 15:37:54 +0000
+Date: Wed, 18 Nov 2026 00:39:58 +0000
 MD5Sum:
  f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
- 377c59b11783234f4c7a2a5040904faf      583 main/binary-amd64/Packages.gz
+ bd785b471e61c355faca3a5f9607b9ce      583 main/binary-amd64/Packages.gz
  063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
  086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
- ce5b210189418f2425d6c9c688d2d9a2      583 main/binary-arm64/Packages.gz
+ 7119a9afc25412ac090d5e4080b2ffb3      583 main/binary-arm64/Packages.gz
  e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
  d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
- ae729aeeff18098ec3307cb22645906e       29 main/binary-all/Packages.gz
+ 221baa1c43ee526ceb2241161cf316c4       29 main/binary-all/Packages.gz
  fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
- 8108c430dbadf05636bdd302c55f5786      865 Release
+ 1c44b5d7ae27bee0f47215e022a2d6b6      865 Release
 SHA256:
  8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
- 419fa9e1b03ef0685be4fafc6cd78dfab2f99ab2dfc38aa02b837daa3412a7c0      583 main/binary-amd64/Packages.gz
+ be999881f64f6697fb28e7329bf8d694832c50e76fe560381d38249d0c4848af      583 main/binary-amd64/Packages.gz
  f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
  9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
- cafa4eadb45cd2b51fda4d255ff9c189de47855471a182e746045c0309c0ba76      583 main/binary-arm64/Packages.gz
+ 958f5575c2eadf9858654acee16d6b8700bb702f2db6ab99842ceba6c58d88a8      583 main/binary-arm64/Packages.gz
  1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
- 9b5ff1b5e5958367684f00f3cc3b575ec534a1e51932773e2f13f3911a243ca8       29 main/binary-all/Packages.gz
+ 1dabb582fb12c63a7230f4290e70a7c1dfb7a8b4a0033b1a00119f1b4a2f7f24       29 main/binary-all/Packages.gz
  230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
- 1d501f6ee5c99162a69c3fbb886fbb853bf1d32013b0e9c61bbe88a59674e562     1842 Release
+ 3775f433f4b01f8e50cee147cb383942ec397345dbc298e23a6bedc93f73065e     1842 Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEE8fOdUaz8J3V79NkhRF0dqUITHA4FAmr8dNIACgkQRF0dqUIT
-HA57gg//Si/u8UwWAnphFWjUL8awMlnXrjfIy49B7McZbAbgz3hwGaoceJzyFB2M
-QP3dLABgfcFx5PkW4gnveDL40oXxadcBm34Im0g933PU2LumsMOxzP6+CEjDIhdX
-hPlJ3iZB2tUNrgSjvvbiyc1aC6hhwL6KehFhOyTTEOHoVw9erGOotbB3Hq5y5GtD
-vtikzzjnuGlLMgjxsAY1TVOamzZIZwYLo1RepWvPvDYzY6R7uoMy73Cn0R3QYCqy
-Yb6UfX/iVkCX+0z11dyei8X6oWDvpwoevFcnDH8IZ/kesROOJwfIFyjEk1TAGTXa
-dwKO9VKbq++EesiPa/Sm9BG9u82Rm5NT4KVv3wIF4Q1cfDoEtDFVCKL8zBcJ8bXh
-yY4nTEYlUyD8FfuCmc9POeNSaxeElHIuHU7ExOISYwb7Esj16Ui0ZCsOTGjx3PLH
-piSFVSbVfavgbbDxHgnfhpSyvqNzRjszNBy6h5CrHE6VD9fEfEiVzqXjRvpcCY/x
-ODZO84sVW1YoDTHOlAFFNBj4695EuHyNBq5Fs19o93aRQOhGIXyB59gFK4cL1kqL
-uEAwrovjc11g2b4JPMBBS03FRsvYzsYMly5DcAW/2JTK73MZULOU0CmIp/S+14dv
-p8yYRVCzj90Z9S03L2A5x1CoSma2lPBi/bTqvS0quV59IrcgPcQ=
-=JfdV
+iQIzBAEBCgAdFiEE8fOdUaz8J3V79NkhRF0dqUITHA4FAmr8894ACgkQRF0dqUIT
+HA7URhAAp5mv9ZG5gbKulXLidwxlK1SfsqVughI3wdXxekOFr+IONSQhmKlFJaVA
+aHX2dx7do+3HbakdJyDKTossgR1fhcNufcXb+ozCTysOyHMB5CP+5QoAeEAJs4po
+dywZAu8jG5H0hPr9sjCxHNIImxnFilGvT2pwbNXNA6ULaMnBevZWPrDdb+V3dWWh
+f5B4XHoXfi3/upiHiJQu1gWB3QqhocdZdXs3IaNMJcDEbiSgcYcucfyDEElmps/i
+jSB1E3Af5IvGoIfa0idDuVY/zTpsXmsuMPQBdXBb4QyyIEdd0SeJc01AL5QDALzy
+tgVIEC0nlAhxm2ogVz4bnCx//KzsXikNxz5fzcyMt7RbvOTWzwEvPzQmXtVDGMm4
+yckN3nUKtSssViRILipWB2kjwU6yh9td3Lwq8TH2bv9CfQx3vEzqhGWAtbEVibVn
+bDSyyIjdJxrWQKis44kFz3Ls/s8d/jQ6MyCegPG0GB2vunLDVGKp32SkY9mRrJ2w
+04vZOXGTa4648lAr9aNzwJ7/UTy5cE4aQd0u24N1JXFYDpG/ot4GGhKpI9NISTYg
+fK2h1ph6IIAolFOoB6RxPsYvDUEEHta50x+XsvgzVPwkQVCfAByXW9iZ34I9Or+v
+R6lKevKvEziF2+3LC37uckmYfSF12QBmDe9f2A0yD7+k1hUl+/Y=
+=cbzb
 -----END PGP SIGNATURE-----
