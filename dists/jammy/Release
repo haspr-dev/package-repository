@@ -5,26 +5,26 @@ Codename: jammy
 Architectures: amd64 arm64 all
 Components: main
 Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
-Date: Fri, 20 Nov 2026 06:04:36 +0000
+Date: Fri, 20 Nov 2026 19:41:55 +0000
 MD5Sum:
- f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
- 3843762524d7375c970553c2d01d094e      583 main/binary-amd64/Packages.gz
+ 7e65824eeb66dea43e8b85c371d2fb70      235 Release
+ d0230921085f8d08cbf01285803052bc      583 main/binary-amd64/Packages.gz
  063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
- 086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
- a99c077abc84818feeb03d9a769afd77      583 main/binary-arm64/Packages.gz
- e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
- d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
- c1f7835fa40d3e1b32a4ba11c6c82489       29 main/binary-all/Packages.gz
+ f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
+ 8177c5c8e99cb28054515b7581af3931       29 main/binary-all/Packages.gz
  fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
- f8b192e53a761d92db9f635267a6e1f2      865 Release
+ d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
+ 61ca4184bbad3e93d3fa5553a59e4c07      583 main/binary-arm64/Packages.gz
+ e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
+ 086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
 SHA256:
- 8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
- 7a45c2e31f88167c94ed4097bd4333afeacc4f931deb4366102cef0bf3eda5b8      583 main/binary-amd64/Packages.gz
+ e367acba15a7adf917611545d9a8ef64accf30354229e4c5646a633d4d95875e      924 Release
+ ac5d1e95b35ea518202cf628d2eb4c4a0bd82a6d7689cc2a1a06e9d5cf54c2d2      583 main/binary-amd64/Packages.gz
  f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
- 9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
- 9b19c158ac032a4872c3462fea6646f210e793f9b83375bae498d2cb399157d4      583 main/binary-arm64/Packages.gz
- 1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
- a9dfc93ac3d4500635e67c05ca06d2d092d7f58731ee35cbc111180b111254fc       29 main/binary-all/Packages.gz
+ 8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
+ edc93d097ac87dc410b5226c96028f0296fb97c4847ec135fd6a9524bda0c97e       29 main/binary-all/Packages.gz
  230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
- 1e9560d72a45a3f99512050d588fd8b506b9c120b8f7849375ec40e182809c1d     1842 Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
+ 9cf8ab888cb4c49893075ad7523a7801fc2b7ad268e49725bef7d20e6f813f7d      583 main/binary-arm64/Packages.gz
+ 1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
+ 9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
