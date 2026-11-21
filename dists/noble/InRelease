@@ -1,0 +1,49 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Haspr
+Label: Haspr
+Suite: noble
+Codename: noble
+Architectures: amd64 arm64 all
+Components: main
+Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
+Date: Sat, 21 Nov 2026 05:57:15 +0000
+MD5Sum:
+ f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
+ c9c30c106f9c9113641935e6303458c6      583 main/binary-amd64/Packages.gz
+ 063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
+ 086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
+ 1f4db191bbc77323ff7c00ecc6a785fd      583 main/binary-arm64/Packages.gz
+ e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
+ d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
+ d112b04ba09be190086eac7e0a6def3b       29 main/binary-all/Packages.gz
+ fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
+ 80736c1971487bd1847abf232434888f      865 Release
+SHA256:
+ 8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
+ 30512f59d8b2bdbe1e55d97f6255dcbf14b21b32ed50862ebb54503aa68f0248      583 main/binary-amd64/Packages.gz
+ f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
+ 9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
+ ea4f5e4bb970efdb032dce1da969b5b910e1ca7b4a5a041e9461477ab3e4df8b      583 main/binary-arm64/Packages.gz
+ 1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
+ 7e13f76ec15af7e91725ffe14418e73938cd3b14767f37913634cb9f02bb5a4c       29 main/binary-all/Packages.gz
+ 230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
+ 34a7f901ecd7a64a5e6b4948e4df7b76bc0dc61a5e76e98fe7a8593fc9cba75e     1842 Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEE8fOdUaz8J3V79NkhRF0dqUITHA4FAmsBMrsACgkQRF0dqUIT
+HA60tg//RT34zdqi9RLHKWNI5EuIuzOjLOKlaUfn7s5UcGz7HmOkx5kTA0soNb5L
+xIu/04lx+FYyK1xT7ks9uHDw37mdTOrDoBhlIO9HToJIxMPp+hQFMP1DaTZmEns0
+DTGitIojDwqisf3Ui1FzKt8K5EmoVAu9y+CaINqOR8ix4Xu5ED08EuhmqlOowN2e
+EYvhYnMIeNPLKP8UoRy+c+7uqT3A5/ym7RlYMwEbwYQJ2BMx8rD6/Nr+ZvfFmHSB
+Yl/JtPpTjfHacNTwRZs+/3Mpdm6m2++VAFnVonV4LoTfpH48b5a1UUYfHkGRMGXp
+Z6rqnSeG+YWe/QAPY3Lq0NzwU7oHAP79KtZ4vEFL0HZFtJAV6SJLS0qzKgrwpbak
+mKrDrkvyszESO17MKsWF/AKQ/jgxGuCfXmZ+/Zlw0h1Hr7RG6JhOWK1sgu3X7RwF
+DJi5xY+mZQBcfb0BG8XZWVol2nUeEf1ZC14iF8fU3kS6AkFK/yyFH4ylLDh6rYXO
+rr2O1XyTdd7XS6HS+6ZxVSF2oxa0nvwnqM7yg+uDshqLUbjepb0e/sU6meybPHUv
+SacXwj4pc8JzD0znt1upm0dS0VweBRxv0Hr33HZC0Au+1J7qVKmRAXeINEI6RPcS
+K1gEbftVb5CdV8yR9TdJp4n9af9dGrW+nGGJMwSQqXpagQkdG7w=
+=suMn
+-----END PGP SIGNATURE-----

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haspr Linux Package Repository</title>
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --border-color: #30363d;
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --accent-cyan: #0bddec;
+      --accent-blue: #199ee9;
+      --code-bg: #090d13;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    .logo {
+      width: 110px;
+      height: 110px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.2rem;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+    }
+    p.lead {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.35rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.4rem;
+    }
+    h3 {
+      font-size: 1.1rem;
+      color: #ffffff;
+      margin: 1rem 0 0.5rem;
+    }
+    pre {
+      background: var(--code-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 1rem;
+      overflow-x: auto;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.95rem;
+      color: var(--accent-cyan);
+      margin: 0.75rem 0;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      color: var(--accent-cyan);
+      background: rgba(11, 221, 236, 0.1);
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+    }
+    ul {
+      margin-left: 1.5rem;
+      margin-top: 0.5rem;
+    }
+    li { margin-bottom: 0.4rem; }
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 3rem;
+      border-top: 1px solid var(--border-color);
+      padding-top: 1.5rem;
+    }
+    a {
+      color: var(--accent-blue);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://raw.githubusercontent.com/haspr-dev/.github/main/assets/haspr-logo.svg" alt="Haspr Logo" class="logo" />
+      <h1>Haspr Linux Package Repository</h1>
+      <p class="lead">Official package repository for Debian, Ubuntu, Fedora, RHEL, CentOS, Rocky Linux, AlmaLinux & openSUSE.</p>
+    </header>
+
+    <div class="card">
+      <h2>⚡ Quick Setup (Automated Detection)</h2>
+      <p>The automated setup script detects your distribution, imports the GPG signing key, and registers the repository:</p>
+      <pre>curl -fsSL https://package.haspr.dev/setup.sh | sudo bash</pre>
+      <p>Then install the package you need:</p>
+      <pre>sudo apt install haspr       # Debian / Ubuntu
+sudo dnf install haspr       # Fedora / RHEL / Rocky / AlmaLinux
+sudo zypper install haspr    # openSUSE / SLES</pre>
+    </div>
+
+    <div class="card">
+      <h2>🛠️ Manual Setup (Step-by-Step)</h2>
+      
+      <h3>A. Debian / Ubuntu (APT)</h3>
+      <pre># 1. Add GPG Key
+sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://package.haspr.dev/haspr-archive-keyring.gpg | sudo tee /etc/apt/keyrings/haspr-archive-keyring.gpg > /dev/null
+
+# 2. Add Sources
+cat &lt;&lt; 'EOF' | sudo tee /etc/apt/sources.list.d/haspr.sources
+Types: deb
+URIs: https://package.haspr.dev
+Suites: stable
+Components: main
+Signed-By: /etc/apt/keyrings/haspr-archive-keyring.gpg
+EOF
+
+# 3. Update &amp; Install
+sudo apt update &amp;&amp; sudo apt install haspr</pre>
+
+      <h3>B. Fedora / RHEL / CentOS / Rocky / AlmaLinux (DNF / YUM)</h3>
+      <pre># 1. Add Repository
+cat &lt;&lt; 'EOF' | sudo tee /etc/yum.repos.d/haspr.repo
+[haspr]
+name=Haspr Packages
+baseurl=https://package.haspr.dev/rpm/
+enabled=1
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://package.haspr.dev/haspr.asc
+EOF
+
+# 2. Import Key &amp; Install
+sudo rpm --import https://package.haspr.dev/haspr.asc
+sudo dnf install haspr</pre>
+
+      <h3>C. openSUSE / SLES (Zypper)</h3>
+      <pre># 1. Add Repository
+sudo rpm --import https://package.haspr.dev/haspr.asc
+sudo zypper ar -f -c https://package.haspr.dev/rpm/ haspr
+sudo zypper --gpg-auto-import-keys refresh haspr
+
+# 2. Install
+sudo zypper install haspr</pre>
+    </div>
+
+    <div class="card">
+      <h2>📦 Hosted Packages</h2>
+      <ul>
+        <li><code>haspr</code> &mdash; Fast CLI, auth agent, and Git/Docker/AWS/K8s credential helpers. (Formats: <code>.deb</code>, <code>.rpm</code>)</li>
+        <li><code>go-haspr-cli</code> &mdash; Compatibility package providing <code>haspr</code>. (Formats: <code>.deb</code>, <code>.rpm</code>)</li>
+        <li><code>haspr-api-ce</code> &mdash; Community Edition backend API server package. (Formats: <code>.deb</code>, <code>.rpm</code>)</li>
+      </ul>
+    </div>
+
+    <footer>
+      <p>Haspr is an independent community project. Passbolt is a registered trademark of Passbolt SA.</p>
+      <p>Documentation: <a href="https://doc.haspr.dev">doc.haspr.dev</a> &bull; GitHub: <a href="https://github.com/haspr-dev">github.com/haspr-dev</a></p>
+    </footer>
+  </div>
+</body>
+</html>
