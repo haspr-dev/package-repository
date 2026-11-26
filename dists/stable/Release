@@ -5,26 +5,26 @@ Codename: stable
 Architectures: amd64 arm64 all
 Components: main
 Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
-Date: Wed, 25 Nov 2026 21:13:13 +0000
+Date: Thu, 26 Nov 2026 07:12:54 +0000
 MD5Sum:
- 3dfac1e7a20878e17a5352b546edd023      237 Release
- 7e99101b60c08762065a1b66e5d83838      583 main/binary-amd64/Packages.gz
+ a785e08e47fed02cb84c28ea94be10fa      237 Release
+ 6e918af6d90cc43a40434fa040dd60d6      583 main/binary-amd64/Packages.gz
  063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
  f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
- eb95800f052dd7329f002814a6ae1bea       29 main/binary-all/Packages.gz
+ 48943ba4aaf8345e91e84194fefa89c4       29 main/binary-all/Packages.gz
  fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
  d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
- 582df1dc1625c82b065a39b29d2d9ca6      583 main/binary-arm64/Packages.gz
+ 521cb163df4ca6600cafea6586f0325a      583 main/binary-arm64/Packages.gz
  e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
  086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
 SHA256:
- f67e9abe164840261008faf59b57e4de80f5692ca55224aafc454a165d90ecfd      926 Release
- 40ef886c59cba2ee677b7c965a4918ba0e2b05940fa6d8b8d0789a10cd3f9543      583 main/binary-amd64/Packages.gz
+ 968a9ff37fd4c3853ebce2c23fe510b41e360857d9299d003835839d497022c4      926 Release
+ 76d5d714916fa2422f2769e023420828c2826272d9faea62d2c4dac3bfe4b7d7      583 main/binary-amd64/Packages.gz
  f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
  8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
- db74836ec1b45437451eada8a94709ee4293dc29f15edc1d63eb0618b39cdb55       29 main/binary-all/Packages.gz
+ 6e950763169e210f2785aa31fe370722d4e34dc7b3d240b4354a3d357f7d069e       29 main/binary-all/Packages.gz
  230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
- f80e91b78f313bc9696e154a4c1ddc71df9636acb6e800597935bb6374acbf19      583 main/binary-arm64/Packages.gz
+ ab290df899cca93b9124e857dc8fa390a299d86d37d735adae15cb89fd604b1e      583 main/binary-arm64/Packages.gz
  1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
  9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
