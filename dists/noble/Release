@@ -1,0 +1,30 @@
+Origin: Haspr
+Label: Haspr
+Suite: noble
+Codename: noble
+Architectures: amd64 arm64 all
+Components: main
+Description: Official Debian and Ubuntu packages for Haspr (haspr-api, go-haspr-cli)
+Date: Sat, 28 Nov 2026 06:42:13 +0000
+MD5Sum:
+ 13c92d8e599a81f9dc1d013080f1e361      235 Release
+ a75222de500d2fa6213acd71f17bc152      583 main/binary-amd64/Packages.gz
+ 063287201b2354699acfe229a752201d       36 main/binary-amd64/Release
+ f9fa9072ccdec7af1114fe3a16240f38     1189 main/binary-amd64/Packages
+ 26a6ce1aac6cb10fb38cc2bf37f3a159       29 main/binary-all/Packages.gz
+ fd6c39cdd73487cd1f9cd62bde016f35       34 main/binary-all/Release
+ d41d8cd98f00b204e9800998ecf8427e        0 main/binary-all/Packages
+ af39038f09218168960545a22d601e16      583 main/binary-arm64/Packages.gz
+ e89c28b1abf5bb6bbd1e9a3ebe9fe004       36 main/binary-arm64/Release
+ 086fe273ac764051acd2b3cda8fbf2bb     1187 main/binary-arm64/Packages
+SHA256:
+ 7eca2c61157eec67b577791903b80aabb40d25990abfeb00759f764735ae4c9d      924 Release
+ fe9d8f32d26a1b8e06ed424315dbaa371419271c2aface009023175399c8084a      583 main/binary-amd64/Packages.gz
+ f4aafa353a338baedf9e98523c13d7ffeda979ec3cf745f9fad977dd770595c8       36 main/binary-amd64/Release
+ 8af2bc6e08e662a39f018903bf3b97cc2fc056fad2164015eabc1736a6ca3667     1189 main/binary-amd64/Packages
+ 46e1665faa121aaabc32261ee476931ca7561222cddd95213cd923016fd0aad5       29 main/binary-all/Packages.gz
+ 230e6650876caa74b08524de8c20d64a987a4e8e1a67501124dcb5ddbcd62f97       34 main/binary-all/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855        0 main/binary-all/Packages
+ e673fdfc27b2672bc96d5bbe297f8fdd7947baddaa796d150356ab597b10ff11      583 main/binary-arm64/Packages.gz
+ 1d2a5a16922021225a06cc93f71f6e6008afdf7049fe22e22d7e98be73c59edf       36 main/binary-arm64/Release
+ 9fdc6938fff9d68f73740260008722f806c49df34c8e2e8442dd725ee6d7d454     1187 main/binary-arm64/Packages
